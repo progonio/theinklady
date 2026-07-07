@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="BLACKWORK tattoo placeholder">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="10%" r="90%">
+      <stop offset="0" stop-color="#31251c"/>
+      <stop offset="0.42" stop-color="#111111"/>
+      <stop offset="1" stop-color="#020202"/>
+    </radialGradient>
+    <linearGradient id="inkLine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7ea"/>
+      <stop offset="0.48" stop-color="#c6a15b"/>
+      <stop offset="1" stop-color="#9c1f1f"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c6a15b"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.12"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <path d="M0 0 H900 V1200 H0Z" fill="none" stroke="#fff" stroke-opacity="0.04" stroke-width="80"/>
+  <rect x="46" y="46" width="808" height="1108" rx="52" fill="none" stroke="url(#frame)" stroke-opacity="0.32" stroke-width="2"/>
+  <rect x="82" y="82" width="736" height="1036" rx="38" fill="none" stroke="#fff" stroke-opacity="0.07"/>
+  <circle cx="450" cy="565" r="330" fill="none" stroke="#c6a15b" stroke-opacity="0.12" stroke-width="2"/>
+  <circle cx="450" cy="565" r="235" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+  <g filter="url(#glow)"><path d="M450 222 L650 526 H530 L600 978 L450 690 L300 978 L370 526 H250 Z" fill="none" stroke="url(#inkLine)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M450 320 L538 504 H362 Z" fill="none" stroke="url(#inkLine)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M326 716 H574" fill="none" stroke="url(#inkLine)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M358 798 H542" fill="none" stroke="url(#inkLine)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="450" y="1024" text-anchor="middle" fill="#c6a15b" font-size="42" font-family="Georgia, serif" letter-spacing="5">BLACKWORK</text>
+  <text x="450" y="1076" text-anchor="middle" fill="#ffffff" fill-opacity="0.34" font-size="17" font-family="Arial, sans-serif" letter-spacing="8">THE INK LADY</text>
+</svg>
