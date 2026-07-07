@@ -1831,28 +1831,32 @@
   .hero-watermark {
     position:relative;
     z-index:30;
-    margin:0 auto 1.55rem;
+    display:block;
+    width:100%;
+    max-width:100%;
+    margin:0 auto 1.45rem;
     font-family:var(--font-display);
-    font-size:clamp(6.8rem, 20vw, 18.5rem);
+    font-size:clamp(3.1rem, 17vw, 18.5rem);
     font-weight:800;
-    letter-spacing:-0.065em;
-    line-height:.72;
+    letter-spacing:-0.055em;
+    line-height:.78;
+    text-align:center;
     white-space:nowrap;
     text-transform:uppercase;
     user-select:none;
     color:transparent;
     -webkit-text-fill-color:transparent;
-    -webkit-text-stroke:1.2px rgba(255,255,255,.24);
+    -webkit-text-stroke:clamp(.65px, .11vw, 1.25px) rgba(255,255,255,.27);
     background:
       linear-gradient(105deg,
-        rgba(255,255,255,.12) 0%,
-        rgba(255,255,255,.58) 42%,
-        rgba(155,155,155,.22) 58%,
-        rgba(255,255,255,.10) 100%);
+        rgba(255,255,255,.14) 0%,
+        rgba(255,255,255,.64) 42%,
+        rgba(165,165,165,.24) 58%,
+        rgba(255,255,255,.12) 100%);
     background-size:220% 100%;
     -webkit-background-clip:text;
     background-clip:text;
-    filter:drop-shadow(0 0 24px rgba(255,255,255,.06));
+    filter:drop-shadow(0 0 clamp(10px, 2vw, 24px) rgba(255,255,255,.06));
     transform-origin:center;
     animation:
       watermarkReveal 1.15s cubic-bezier(.2,.72,.18,1) both,
@@ -1866,9 +1870,23 @@
     z-index:-1;
     color:transparent;
     -webkit-text-fill-color:transparent;
-    -webkit-text-stroke:7px rgba(255,255,255,.035);
-    filter:blur(7px);
-    opacity:.9;
+    -webkit-text-stroke:clamp(2.8px, .5vw, 7px) rgba(255,255,255,.04);
+    filter:blur(clamp(3px, .7vw, 7px));
+    opacity:.85;
+  }
+  @media (max-width: 640px) {
+    .hero-watermark {
+      font-size:clamp(3rem, 16.4vw, 6.2rem);
+      letter-spacing:-0.045em;
+      line-height:.82;
+      margin-bottom:1.15rem;
+    }
+  }
+  @media (max-width: 380px) {
+    .hero-watermark {
+      font-size:clamp(2.65rem, 15.8vw, 3.9rem);
+      letter-spacing:-0.035em;
+    }
   }
 
   .hero-bottom-fade {
